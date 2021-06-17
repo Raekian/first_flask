@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <h1>User {{user.id}}</h1> <a style="float: right;" href="/">Home</a>
+    <div style="background-color:cadetblue; border:black 4px solid;" class="container">
+              <h1>{{user.first_name}} {{user.last_name}}</h1>
+              <h2>{{user.email}}</h2>
+              <h3>{{user.created_at}}</h3>
+              <h3>{{user.updated_at}}</h3>
+    </div>
+    <a href="/delete/{{user.id}}">Edit</a> | <a href="/edituser/{{user.id}}">Delete</a>
+</body>
+</html>
